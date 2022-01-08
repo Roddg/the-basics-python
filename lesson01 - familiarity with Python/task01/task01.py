@@ -11,7 +11,7 @@ print("%.1f \n%.1f \n%s" % (a, b, name))
 
 name = input("Введите ваше имя: ")
 
-print(name, "найдем значение выражения (x+y)/2*log(x+y)/x*y), введите числа:")
+print(f"{name} найдем значение выражения (x+y)/2*log(x+y)/x*y, введите числа:")
 x = float(input("x = "))
 y = float(input("y = "))
 

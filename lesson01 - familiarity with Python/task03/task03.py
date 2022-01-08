@@ -2,5 +2,5 @@
 __author__ = "Дмитрий Родионов"
 
 number = input("Введите число >>> ")
-sum_numbers = int(number) + int(number + number) + int(number + number + number)
-print(f"Cумма чисел n + nn + nnn: {sum_numbers}")
+sum_ = int(number) + int(number + number) + int(number + number + number)
+print(f"Cумма чисел {number} + {number}{number} + {number}{number}{number} = {sum_}")

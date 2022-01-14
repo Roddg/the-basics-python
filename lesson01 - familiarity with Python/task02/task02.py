@@ -1,10 +1,26 @@
-# Задача 2.
+"""
+Задача 2.
 __author__ = "Дмитрий Родионов"
 
-time = int(input("Введите время в секундах >>> "))
+Пользователь вводит время в секундах.
+Переведите время в часы, минуты и секунды и выведите в формате чч:мм:сс.
+Используйте форматирование строк.
+"""
 
-hours = time // 3600
-minutes = (time // 60) % 60
-seconds = time % 60
+# проверка в качестве безопастности, на неверный формат числа
+while True:
+    user_time = input('введите количество секунд\n')
+    if user_time.isdigit():
+        user_time = int(user_time)  # преобразуем пользователький ввод в целое число
+        break
 
-print('Время в формате чч:мм:сс {0}:{1}:{2}'.format(hours, minutes, seconds))
+    print('ошибка ввода, это не число')
+
+hours = user_time // 3600
+minutes = (user_time % 3600) // 60
+seconds = (user_time % 3600) % 60
+
+# кортежный синтаксис для примера краткой записи
+# hours, minutes, seconds = time_second // 3600, (time_second % 3600) // 60, time_second % 60
+
+print(f"{hours:>02}:{minutes:>02}:{seconds:>02}")

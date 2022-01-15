@@ -15,5 +15,4 @@ type_ = [2, 'text', 456, 45.3, [4, 8, 15, 16, 23, 42],
          None]
 
 # Скрипт проверки типов данных
-for i in type_:
-    print(f"Элемент {i}, тип {type(i)}")
+type_ = [print(f"Элемент {i}, тип {type(i)}") for i in type_]
